@@ -1,0 +1,37 @@
+linear search
+
+finding a target value in a sorted or unsorted list or array
+iterate through each element one by one - sequentially - making comparisons until the target value is found or end is reached
+
+1. start at the beginning
+2. compare the current element and target element
+3. if current element equals target - return index of the element
+4. if not, move to the next and repeat step 2
+5. if end is reached without finding the target, return -1
+
+time complexity - O(n) - n is the number of elements - worst case is when all elements are checked
+space complexity - O(1) - requires only a constant amount of extra space
+
+
+binary search
+
+finding a target value in a sorted list or array
+divides the list in half repeatedly to narrow down search space
+
+1. get the low and high indices: low and high
+2. get the middle index = (low + high) // 2
+3. make comparisons:
+    i) if value at mid == target, return mid
+    ii) if target is less than mid, search left half - update high=mid-1
+    iii) if target is greater than mid, search right half - update low=mid+1
+4. repeat step 2 and 3 until target is found
+5. if target is not found, return -1
+
+time complexity - O(log n) - number of elements halved with each iteration
+space complexity = O(1) - for iterative implementation, O(log n) - for recursive implementation due to function call stack
+
+
+
+
+
+binary is more efficient because it is faster
